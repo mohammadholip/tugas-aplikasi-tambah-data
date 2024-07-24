@@ -1,0 +1,89 @@
+body {
+    font-family: sans-serif;
+}
+.label {
+    padding-right: 15px;
+}
+.content {
+    display: flex;
+}
+.content-kiri {
+    flex: 1;
+}
+.content-kanan {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.input-btn {
+    font-size: 16px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    justify-content: right;
+    align-items: right;
+    color: white;
+    cursor: pointer;
+    background-color: #4CAF50;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 1)
+}
+.input-btn:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+.input-btn:active {
+    transform: scale(0.95); 
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2); 
+  }
+input[type="text"] {
+    width: calc(145% - 16px);
+    font-size: 14px;
+}
+.pesan-error {
+    color: red;
+    margin-top: 2px;
+    text-align: center;
+    padding: 10px;
+}
+.pesan-sukses {
+    color: green;
+    margin-top: 2px;
+    text-align: center;
+    padding: 10px;
+}
+.tampil-table, .tampil-th, .tampil-td {
+    padding: 1rem;
+}
+
+.tampil-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.tampil-th, .tampil-td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+.tampil-th {
+    position: sticky;
+    background-color: #d5d1defe;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+tbody .tampil-tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody .tampil-tr:hover {
+    background-color: #fff6;
+    
+}
